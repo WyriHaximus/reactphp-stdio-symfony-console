@@ -13,6 +13,14 @@ final class StdioOutput implements OutputInterface
      */
     private $stdio;
 
+    /**
+     * @param Stdio $stdio
+     */
+    public function __construct(Stdio $stdio)
+    {
+        $this->stdio = $stdio;
+    }
+
     public function write($messages, $newline = false, $options = 0)
     {
         if (!is_array($messages)) {
