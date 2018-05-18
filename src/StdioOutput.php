@@ -3,6 +3,7 @@
 namespace WyriHaximus\React\Symfony\Console;
 
 use Clue\React\Stdio\Stdio;
+use Symfony\Component\Console\Formatter\OutputFormatterInterface;
 use Symfony\Component\Console\Output\Output;
 
 final class StdioOutput extends Output
@@ -14,11 +15,14 @@ final class StdioOutput extends Output
 
     /**
      * @param Stdio $stdio
+     * @param int $verbosity
+     * @param bool $decorated
+     * @param OutputFormatterInterface|null $formatter
      */
-    public function __construct(Stdio $stdio)
+    public function __construct(Stdio $stdio, $verbosity = self::VERBOSITY_NORMAL, $decorated = false, OutputFormatterInterface $formatter = null)
     {
         $this->stdio = $stdio;
-        parent::__construct();
+        parent::__construct($verbosity, $decorated, $formatter);
     }
 
     public function doWrite($message, $newline = false)
