@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace WyriHaximus\React\Symfony\Console;
 
@@ -14,9 +14,9 @@ final class StdioOutput extends Output
     private $stdio;
 
     /**
-     * @param Stdio $stdio
-     * @param int $verbosity
-     * @param bool $decorated
+     * @param Stdio                         $stdio
+     * @param int                           $verbosity
+     * @param bool                          $decorated
      * @param OutputFormatterInterface|null $formatter
      */
     public function __construct(Stdio $stdio, $verbosity = self::VERBOSITY_NORMAL, $decorated = false, OutputFormatterInterface $formatter = null)
