@@ -1,5 +1,6 @@
 {
     "name": "wyrihaximus/react-stdio-symfony-console",
+    "description": "Symfony Console wrapper around clue/stdio-react",
     "require": {
         "php": "^7.2",
         "clue/stdio-react": "^2.1",
