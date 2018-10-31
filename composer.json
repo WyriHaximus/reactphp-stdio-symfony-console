@@ -8,12 +8,6 @@
     "require-dev": {
         "api-clients/test-utilities": "^4.3"
     },
-    "config": {
-        "sort-packages": true,
-        "platform": {
-            "php": "7.2"
-        }
-    },
     "autoload": {
         "psr-4": {
             "WyriHaximus\\React\\Symfony\\Console\\": "src/"
@@ -22,6 +16,12 @@
     "autoload-dev": {
         "psr-4": {
             "WyriHaximus\\Tests\\React\\Symfony\\Console\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "7.2"
         }
     },
     "scripts": {
