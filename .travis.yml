@@ -14,24 +14,9 @@ matrix:
     - php: 7.2
       env:
         - dropPlatform=false
-    - php: 7.3snapshot
+    - php: 7.3
       env:
         - dropPlatform=false
-      dist: xenial
-      sudo: required
-      addons:
-       apt:
-        packages:
-          - libzip4
-    - php: 7.3.0RC1
-      env:
-        - dropPlatform=false
-      dist: xenial
-      sudo: required
-      addons:
-       apt:
-        packages:
-          - libzip4
     - php: nightly
       env:
         - dropPlatform=false
@@ -43,26 +28,10 @@ matrix:
       env:
         - dependencies=lowest
         - dropPlatform=false
-    - php: 7.3snapshot
+    - php: 7.3
       env:
         - dependencies=lowest
         - dropPlatform=false
-      dist: xenial
-      sudo: required
-      addons:
-       apt:
-        packages:
-          - libzip4
-    - php: 7.3.0RC1
-      env:
-        - dependencies=lowest
-        - dropPlatform=false
-      dist: xenial
-      sudo: required
-      addons:
-       apt:
-        packages:
-          - libzip4
     - php: nightly
       env:
         - dependencies=lowest
@@ -75,26 +44,10 @@ matrix:
       env:
         - dependencies=highest
         - dropPlatform=false
-    - php: 7.3snapshot
+    - php: 7.3
       env:
         - dependencies=highest
         - dropPlatform=false
-      dist: xenial
-      sudo: required
-      addons:
-       apt:
-        packages:
-          - libzip4
-    - php: 7.3.0RC1
-      env:
-        - dependencies=highest
-        - dropPlatform=false
-      dist: xenial
-      sudo: required
-      addons:
-       apt:
-        packages:
-          - libzip4
     - php: nightly
       env:
         - dependencies=highest
