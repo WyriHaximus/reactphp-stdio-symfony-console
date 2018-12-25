@@ -6,6 +6,9 @@ use ApiClients\Tools\TestUtilities\TestCase;
 use Clue\React\Stdio\Stdio;
 use WyriHaximus\React\Symfony\Console\StdioOutput;
 
+/**
+ * @internal
+ */
 final class StdioOutputTest extends TestCase
 {
     public function provideDoWrites()
@@ -19,7 +22,7 @@ final class StdioOutputTest extends TestCase
         yield [
             'message',
             true,
-            'message' . PHP_EOL,
+            'message' . \PHP_EOL,
         ];
     }
 
@@ -30,7 +33,7 @@ final class StdioOutputTest extends TestCase
      *
      * @dataProvider provideDoWrites
      */
-    public function testDoWrite(string $message, bool $newLine, string $expectedWrite)
+    public function testDoWrite(string $message, bool $newLine, string $expectedWrite): void
     {
         $stdio = $this->prophesize(Stdio::class);
         $stdio->write($expectedWrite)->shouldBeCalled();

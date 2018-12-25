@@ -25,9 +25,9 @@ final class StdioOutput extends Output
         parent::__construct($verbosity, $decorated, $formatter);
     }
 
-    public function doWrite($message, $newline = false)
+    public function doWrite($message, $newline = false): void
     {
-        $lineEnding = $newline ? PHP_EOL : '';
+        $lineEnding = $newline ? \PHP_EOL : '';
         $this->stdio->write($message . $lineEnding);
     }
 }
