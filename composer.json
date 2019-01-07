@@ -4,7 +4,7 @@
     "require": {
         "php": "^7.2",
         "clue/stdio-react": "^2.1",
-        "symfony/console": "^4.0 || ^3.4"
+        "symfony/console": "^4.2.2"
     },
     "require-dev": {
         "api-clients/test-utilities": "^5.4"
