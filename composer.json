@@ -7,7 +7,7 @@
         "symfony/console": "^4.2.2"
     },
     "require-dev": {
-        "api-clients/test-utilities": "^5.4"
+        "wyrihaximus/async-test-utilities": "^1.1"
     },
     "autoload": {
         "psr-4": {
