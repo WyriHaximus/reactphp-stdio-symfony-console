@@ -2,14 +2,14 @@
 
 namespace WyriHaximus\Tests\React\Symfony\Console;
 
-use ApiClients\Tools\TestUtilities\TestCase;
 use Clue\React\Stdio\Stdio;
+use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
 use WyriHaximus\React\Symfony\Console\StdioOutput;
 
 /**
  * @internal
  */
-final class StdioOutputTest extends TestCase
+final class StdioOutputTest extends AsyncTestCase
 {
     public function provideDoWrites()
     {
